@@ -15,7 +15,7 @@
             _db = roadQualitiesDb;
         }
 
-        [HttpPost("/addCoordinate")]
+        [HttpPost("/Coordinate")]
         public IActionResult AddCoordinate(RoadQualityRequest coordinateRequest)
         {
             if (coordinateRequest == null) {
@@ -34,7 +34,7 @@
             return Ok();
         }
 
-        [HttpGet("/getCoordinates")]
+        [HttpGet("/Coordinates")]
         public IActionResult GetCoordinates()
         {
             return Ok(_db.RoadQualities.ToList());
