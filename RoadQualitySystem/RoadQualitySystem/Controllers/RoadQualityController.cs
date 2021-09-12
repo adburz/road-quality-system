@@ -31,7 +31,7 @@
             });
             _db.SaveChanges();
 
-            return Ok();
+            return Ok(new {StatusCode = 200 });
         }
 
         [HttpGet("/Coordinates")]
